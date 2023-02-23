@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    /* background: rgba(0, 0, 0, 0.879);
+    color: white; */
+}
+
+#form,
+#options {
+    padding-right: 5.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.card {
+    border: 1px solid black;
+    border-bottom: none;
+    color: white;
+}
+
+.card-block {
+    padding: .5rem 1rem;
+}
+
+.primary {
+    background-color: blue;
+}
+
+.secondary {
+    background-color: grey;
+}
+
+.success {
+    background: green;
+}
+
+.danger {
+    background: red;
+}
+
+.secondary {
+    background-color: grey;
+}
+
+
+/* remember we are more concerned with the javascxrpit right now. the styling and responsiveness should not worry you. you can do it don't stress over it!! */

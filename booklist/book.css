@@ -1,0 +1,88 @@
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            line-height: 1rem;
+            font: inherit;
+        }
+        
+        .container {
+            margin: 1rem 3rem;
+        }
+        
+        h1 {
+            font-size: 3em;
+        }
+        
+        header ::before {
+            content: url(../utilities/icons8-open-book-30.png);
+            display: inline-block;
+            padding: 1rem;
+            size: 3rem;
+            fill: aqua;
+        }
+        
+        span {
+            color: aqua;
+        }
+        
+        span::before {
+            content: url(../utilities/icons8-open-book-30.png);
+            display: none;
+        }
+        
+        label {
+            display: block;
+            font-size: 1.3rem;
+        }
+        
+        input {
+            padding: .5rem 10rem;
+        }
+        
+        .wrapper * {
+            margin-bottom: .5rem;
+            margin-top: .5rem;
+        }
+        
+        #btn {
+            font-size: 1.5rem;
+            background-color: aqua;
+            border: none;
+            padding: 0rem 13.7rem;
+        }
+        
+        .alert {
+            background-color: red;
+            color: white;
+            display: inline;
+            font-size: 1.3rem;
+            padding: .5rem 10rem;
+        }
+        
+        .alert-1 {
+            background-color: green;
+            color: white;
+            display: inline;
+            font-size: 1.3rem;
+            padding: .5rem 10rem;
+        }
+        
+        #form {
+            padding-bottom: 2rem;
+        }
+        
+        table,
+        th,
+        tr,
+        td,
+        caption {
+            border-top: 1px solid;
+            font-weight: bold;
+            font-size: 1.3rem;
+            border-bottom: 1px solid;
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: collapse;
+            padding: .5rem 3rem;
+            text-align: center;
+        }
