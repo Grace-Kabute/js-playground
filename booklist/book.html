@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My book list</title>
+    <link rel="stylesheet" href="../booklist/book.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- <div><img src="../utilities/icons8-open-book-30.png" alt=""></div> -->
+            <h1 class="head"> My<span>Book</span>List</h1>
+        </header>
+        <main class="wrapper">
+            <form action="for" id="form">
+                <div>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" aria-rowcount="30">
+                </div>
+                <div>
+                    <label for="Author">Author</label>
+                    <input type="text" id="author">
+                </div>
+                <div>
+                    <label for="ISBN">ISBN</label>
+                    <input type="text" id="isbn">
+                </div>
+                <div>
+                    <input type="submit" name="addbook" id="btn" value="add book">
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </main>
+    </div>
+    <script src="../booklist/book.js"></script>
+</body>
+
+</html>
