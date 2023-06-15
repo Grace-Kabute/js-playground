@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weight converter</title>
+    <link rel="stylesheet" href="../weight converter/weigth.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper grid">
+            <h1 class="header">Weight converter</h1>
+            <form>
+                <select name="select-unit" id="options">
+                    <option value="number" id="option1">
+                pounds
+                    </option>
+                    <option value="number" id="option2">
+                grams
+                    </option>
+                    <option value="number" id="option3">
+                kilograms
+                    </option>
+                    <option value="number" id="option4">
+                ounces
+                    </option>
+                </select>
+                <div class="new">
+
+                    <input type="number" id="input-pounds" placeholder="Enter pounds..." required>
+                    <input type="number" id="input-grams" placeholder="Enter grams..." required>
+                    <input type="number" id="input-kilograms" placeholder="Enter kilograms..." required>
+                    <input type="number" id="input ounces" placeholder="Enter ounces..." required>
+                </div>
+
+
+
+
+
+            </form>
+            <div class="output">
+                <div class="card">
+                    <div class="card-block primary">
+                        <h2>grams:</h2>
+                        <div class="gramsoutput"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block success">
+                        <h2>Kilograms:</h2>
+                        <div class="kgoutput"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block danger">
+                        <h2>ounces:</h2>
+                        <div class="ounceoutput"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block secondary">
+                        <h2>pounds:</h2>
+                        <div class="poundoutput"></div>
+                    </div>
+                </div>
+                <div class="card"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../weight converter/new.js"></script>
+</body>
+
+</html>

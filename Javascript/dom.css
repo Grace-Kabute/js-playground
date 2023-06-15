@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    text-align: center;
+    padding: 2px solid rgb(206, 205, 205);
+}
+
+body {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.form {
+    background-color: rgb(216, 212, 212);
+}
+
+button {
+    background-color: rgb(47, 46, 46);
+    color: white;
+}
+
+.form-head {
+    margin: 0px;
+}

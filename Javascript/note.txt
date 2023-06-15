@@ -1,0 +1,356 @@
+/*====
+//string
+const name = 'kabute'
+console.log(name)
+    //number
+const age = 30
+console.log(age)
+    //boolean have only two possible
+const isPrimaryNumber = true
+console.log(isPrimaryNumber)
+    //undefined. can be done explicitly but a variable that is not assigned is by default interpreted as undefined.
+    // CSS is a styling language while HTML is a mark-up language. This two should not be confused for programming languages as they are not used to give commands to a computer. Javascript is a programming language and thus when studying it, remember that the point of a programming lamguage is to give instructions to a computrer thus it'5s going to make your learning purposeful.
+let result = undefined
+console.log(result)
+    //object
+const person = {
+    'firstName': 'Kabute',
+    'lastName': 'Grace',
+    'age': 30
+}
+console.log(person.firstName)
+    //string
+
+const colors = ['red', 'blue', 'yellow']
+console.log(colors[1]);
+
+//operators.
+//assignment operators
+const me = 'kabute';
+//the equal sign is the operator. it is used to assign a value to a variable.
+//below is example of a comparison operator
+let x = 3
+let y = 4
+console.log(x >= y);
+
+//logical operators
+let a = 10
+let b = 5
+    //we are trying to figure out if 8 is in the range of a and b
+const isTrue = a > 8 && b > 8
+console.log(isTrue)
+    //&& is called a logical and operator and it returns true if both the oporents evaluates to true and false if they don't.
+let m = 10
+let n = 5
+const logicaOr = m < 8 || n < 8
+console.log(logicaOr)
+    // the above is called the logicalmor operator which returns true if either of the operants is true.
+const isvalid = true
+console.log(!isvalid)
+    // the above is a logical not operator.
+console.log('Nairobi ' + 'University')
+
+//ternary operators
+let p = 10
+let q = 5
+const isEven = p - q === 4 ? true : false;
+console.log(isEven);
+======*/
+
+
+/*====
+//variable
+const name = 'kabute';
+console.log(name)
+    //type conversion. Implicit or explicit conversion.
+console.log(2 + '3')
+console.log(2 - '1')
+console.log('4' * '2')
+console.log('kabute' - 'grace')
+
+console.log('2' + true) //converts the number string into a string after concatination.
+console.log('2' - null)
+console.log(2 + undefined)
+    //explicit conversion
+console.log(Number(true))
+console.log(parseInt('2'))
+console.log(parseFloat(3.14))
+console.log('2' - true)
+console.log(String(true))
+console.log((500).toString())
+console.log(Boolean(10))
+    //null,undefined,0,'' and NaN return false when converted to boolean using the global boolean method.
+console.log(Boolean(null))
+console.log(Boolean(''))
+console.log(Boolean(' ')) //this is a string with only spaces in it and it returns true.
+console.log(Boolean(undefined))
+====*/
+
+
+/*====
+//type conversion.
+//it can either be implicit or explicit conversion
+//impliciti conversion is done automatically by javascript and is also refferd to as type coersion while explicit conversion is done manually.
+
+//implicit conversion. type coersion
+console.log(3 + '4') // the reult of this should be 34. when a number is added to a number string it is converted to a string.
+console.log(true + '3')
+console.log(true - 3)
+console.log(2 - null)
+console.log(false - true)
+    //as we see from above, when any other sign is used with a string number or a number, they are converted to number. when you add a number or a number string with a boolan value, true is treated as number 1,false as a zero. Also null is treated as a zero.
+console.log('kabute' - 'grace')
+    //from above, when you use other operators with a non-numeric string  the result is NaN (not a number)
+
+//undefined used with number, boolean or null gives a NaN when used with any operators.with a string, it remains a string.
+console.log(undefined + 4)
+
+//explicit conversion.
+//to convert a string or a boolean to a number, we can use the number global method or the parseInt/parsefloat method.
+//number global method.
+console.log(Number(true)) //NB the number must start with an uppercase letter.
+console.log(Number('3'))
+
+const isEven = true
+console.log(Number(isEven))
+    //parseInt/parseFloat
+console.log(parseInt('5')) //converts a string to an integrer
+console.log(parseFloat('3.223'))
+
+//string global method.this converts other datatypes into strings
+console.log(String(true)) //this gives a result of true- string
+    //an alternative to teh string global is the tostring method. this will however not work null and undefined. 
+console.log((true).toString())
+console.log(Number('5') + 3)
+    //global boolean method.it conversts
+console.log(Boolean(1))
+console.log(Boolean(0))
+    // null, undefineed, 0, ''(empty string) all return a false when converted to a boolean. everything else returns true.
+====*/
+
+ //equality. there are two types, (= =) double equal which allows coersion before cmpring the values and (= = =) which does not allow coersion it takes the values as they are and compares the.
+
+
+/*====
+ const var1 = 10
+ const var2 = '10'
+
+ console.log(var1 == var2) //this converts the numeric string to a number string before it compares the two values hence the return will be true
+ console.log(var1 === var2) // on the other hand this does not allow corsion thus will take the values as they are and compare them. it will thus return false as the two are of different date types. it's strick and makes sure the values are of the same type and will not convert implicitly
+ const num = 4
+ if (num > 0) {
+     console.log('Number is positive')
+ } else if (num < 0) {
+     console.log('number is negative')
+ } else {
+     console.log('number is zero')
+ }
+ // the if conditional statement evaluates the code inside the parenthesis and when the code is evaluated to true, it runs the code inside the curly braces. if false, we make use of the else statement an drun a different block of code. otherwise no code is run.AN ELSE STATEMENT MUST FOLLOW AN IF STATEMENT. therfore, if the condition evaluates to true, the if block is executed and if the condition is evaluated to false, the else block is executed.
+ //when there more than two conditions to be evaluated, we use the "else if" statement. it comes after the if statement and gives a new condtion to evaluate if the "if" statement  condition is false. we then add an "else" condition to to be evaluated if the  "if" and "else if" condtions are both false.
+
+ const color = 'violet'
+ switch (color) {
+     case 'red':
+         console.log('color is red')
+         break
+     case 'blue':
+         console.log('color is blue')
+         break
+     case 'yellow':
+         console.log('color is yellow')
+         break
+     case 'green':
+         console.log('color is green')
+         break
+     default:
+         console.log('not a valid color')
+ }
+
+ //for (let i = 1; i <= 5; i++) {
+ //  console.log('iteration number' + i)
+ //}
+
+ //let i = 1
+ //while (i <= 5) {
+ //  console.log('iteration number' + i)
+ //   i++
+ //}
+
+ //let i = 6
+ //do {
+ //console.log('iteration number' + i)
+ //  i++
+ //}
+ //while (i <= 5)
+
+
+
+
+ const colorarray = ['red', 'orange', 'blue']
+ for (const type of colorarray) {
+     console.log('colors like' + type)
+ }
+ // a function is a block of called used to perform a task.
+ function greet(name) { // the input in the brackets is called a parameter.
+     console.log('good morning ' + name)
+ }
+ greet('Grace') //the input in the brackets is called an arugument
+ greet('Ashley')
+ greet('Faith')
+
+ //we can use the function code to perform mathematical calculations
+ //the syntax is as follows
+ //function sum(a, b) {
+ // return a + b
+ //}
+ //let add = sum(5, 6)
+ //console.log(add) // we can directly call teh code here with the numbers or we can use a const value to assign numbers to the code
+ //arrow function. this is an alternative function syntax.
+
+ const arrowsum = (a, b) => {
+     return a + b
+ }
+ const add = arrowsum(4, 4)
+ console.log(add)
+     //concatination
+ const name = 'grace';
+ const age = 20;
+
+
+ const kabute = `my name is ${'Grace'} and i am ${20} `
+ console.log(kabute)
+     //back ticks makes the code template strings.
+ console.log(`my name is ${name} and i am ${age}`)
+
+ //string properties. to get the number of elements in astring, we call use the length property in the console.
+ const school = 'The University of Nairobi';
+
+ console.log(school.substring(0, 15).toUpperCase())
+ console.log(school.toUpperCase())
+ const numbers = [1, 2, 3, 4, 5]
+ console.log(numbers)
+     // we can write an array ina different way using the constructor method where we use the 'new' key word.syntax as shown below
+ const number = new Array(1, 2, 3, 4, 5)
+ console.log(number[0])
+
+ //function
+ function greet(name) {
+     console.log('good morning ' + name)
+ }
+
+ greet('grace')
+     //arrays
+ const fruit = ['mangos', 'oranges', 'apples']
+ fruit[3] = 'pears' //this replaces the index at the array with the new item. even though we can use the const variable to write an array, we can still replace  value within the array. if we were to specify an index above by one with te excisting ones, we add another item in the array.
+ fruit.push('berries'); //this adds an extra item of the array at the end of the list
+ fruit.unshift('bananas'); // this adds an item at the begging of the list.
+ fruit.pop(); //this removes the last letter of the list from the array items
+ console.log(Array.isArray(fruit)) // it checks if the stated in the parenthesis is the an array or not
+ console.log(fruit.indexOf('pears'))
+ console.log(fruit)
+     //we can write also write arrays using the constructor method.
+
+ const numners = new Array(1, 2, 3, 4, 5)
+ console.log(numbers)
+
+ //object literals. it is a block of code that holds more than one statement.
+
+ const person = {
+     firstName: 'kabute',
+     secondName: 'grace',
+     school: 'The University of Nairobi',
+     course: 'Economics and statistics',
+     units: ['political economy', 'property law', 'calculus'],
+     hobbies: {
+         active: 'swimming',
+         inactive: 'watcing'
+
+     }
+ }
+ console.log(person.units[1], person.hobbies.active)
+
+
+ const economics = {
+     units: ['linear algebra',
+         'calculus'
+     ],
+     school: 'school of economics',
+     faculy: 'faculty of humanities and social sciences.',
+     campus: 'main campus'
+
+ }
+ const economicsJSON = JSON.stringify(economics)
+ console.log(economicsJSON)
+     //arrays of objects
+
+ const todos = [{
+         day: 1,
+         task: 'code',
+         iscompleted: true
+     },
+     {
+         day: 2,
+         task: 'read a novel',
+         iscompleted: true
+     },
+     {
+         day: 3,
+         task: 'watch a series',
+         iscompleted: false
+     }
+
+ ]
+
+ const todosJson = JSON.stringify(todos)
+ for (const todo of todos)
+     console.log(todosJson)
+     //loops revision.loops are used to repeat a block of code.
+     //for loops
+ for (i = 1; i <= 10; i++) {
+     console.log('number is ' + i)
+ }
+ //while loops
+ i = 1
+ while (i <= 5) {
+     console.log('number is ' + i)
+     i++
+ }
+ //do while loops.
+ i = 10
+ do {
+     console.log('number is ' + i)
+
+     i--
+ } while (i >= 1)
+ //NB. the condition in the do while loop is outside the code itself. therefore, even when the condtion is false, the loop shall be terminated but the code will stil  runs once in the console. unlike the other loop types we've seen above where once the code is false, the loop is terminated and the code does not run.
+
+ //for..of loops. this loop is used to loop an array. you have to prepare an array first.
+
+ const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+ for (const letter of letters) {
+     console.log('letters like ' + letter)
+ }
+ //recap. loops are a way of repeating a block of code that could have otherwise needed alot of code to impliment one buy one. there are different types of loops. for loop,while loop, do...while loops and for....of loop which is used to write a loop of an array.
+ //for loop syntax
+ for (i = 1; i <= 5; i++) {
+     console.log('initial number' + i)
+ }
+ //while loop, we set the initializer outside the loop. The syntax.
+ i = 1
+ while (i <= 5) {
+     console.log('Here the number is ' + i)
+     i++
+ }
+ //the syntax of for..of loop is as follows
+ const paintColor = ['yellow', 'orange', 'blue', 'cream']
+ for (i = 0; i < paintColor.length; i++) {
+     console.log('color choices ' + paintColor[i]) // we can use the for loop also to loop through an array.remember to use i value as the index when you calling the loop and to add the condtion. this is not teh most popular way to loop an array. its more advicsable to use a for...of loop
+ }
+ //do while loops syntax.in this loop, the condition is written after the code. therefore, when the condtion is false the loop is contaminated but unlike te others it runss once as per the code. the syntax is as follows
+ i = 10
+ do {
+     console.log('number ' + i)
+     i--
+ } while (i >= 1)
+
+ ===*/

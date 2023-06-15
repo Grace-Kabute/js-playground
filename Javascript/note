@@ -1,0 +1,129 @@
+/*====
+//string
+const name = 'kabute'
+console.log(name)
+    //number
+const age = 30
+console.log(age)
+    //boolean have only two possible
+const isPrimaryNumber = true
+console.log(isPrimaryNumber)
+    //undefined. can be done explicitly but a variable that is not assigned is by default interpreted as undefined.
+    // CSS is a styling language while HTML is a mark-up language. This two should not be confused for programming languages as they are not used to give commands to a computer. Javascript is a programming language and thus when studying it, remember that the point of a programming lamguage is to give instructions to a computrer thus it'5s going to make your learning purposeful.
+let result = undefined
+console.log(result)
+    //object
+const person = {
+    'firstName': 'Kabute',
+    'lastName': 'Grace',
+    'age': 30
+}
+console.log(person.firstName)
+    //string
+
+const colors = ['red', 'blue', 'yellow']
+console.log(colors[1]);
+
+//operators.
+//assignment operators
+const me = 'kabute';
+//the equal sign is the operator. it is used to assign a value to a variable.
+//below is example of a comparison operator
+let x = 3
+let y = 4
+console.log(x >= y);
+
+//logical operators
+let a = 10
+let b = 5
+    //we are trying to figure out if 8 is in the range of a and b
+const isTrue = a > 8 && b > 8
+console.log(isTrue)
+    //&& is called a logical and operator and it returns true if both the oporents evaluates to true and false if they don't.
+let m = 10
+let n = 5
+const logicaOr = m < 8 || n < 8
+console.log(logicaOr)
+    // the above is called the logicalmor operator which returns true if either of the operants is true.
+const isvalid = true
+console.log(!isvalid)
+    // the above is a logical not operator.
+console.log('Nairobi ' + 'University')
+
+//ternary operators
+let p = 10
+let q = 5
+const isEven = p - q === 4 ? true : false;
+console.log(isEven);
+======*/
+
+
+/*====
+//variable
+const name = 'kabute';
+console.log(name)
+    //type conversion. Implicit or explicit conversion.
+console.log(2 + '3')
+console.log(2 - '1')
+console.log('4' * '2')
+console.log('kabute' - 'grace')
+
+console.log('2' + true) //converts the number string into a string after concatination.
+console.log('2' - null)
+console.log(2 + undefined)
+    //explicit conversion
+console.log(Number(true))
+console.log(parseInt('2'))
+console.log(parseFloat(3.14))
+console.log('2' - true)
+console.log(String(true))
+console.log((500).toString())
+console.log(Boolean(10))
+    //null,undefined,0,'' and NaN return false when converted to boolean using the global boolean method.
+console.log(Boolean(null))
+console.log(Boolean(''))
+console.log(Boolean(' ')) //this is a string with only spaces in it and it returns true.
+console.log(Boolean(undefined))
+====*/
+
+
+/*====
+//type conversion.
+//it can either be implicit or explicit conversion
+//impliciti conversion is done automatically by javascript and is also refferd to as type coersion while explicit conversion is done manually.
+
+//implicit conversion. type coersion
+console.log(3 + '4') // the reult of this should be 34. when a number is added to a number string it is converted to a string.
+console.log(true + '3')
+console.log(true - 3)
+console.log(2 - null)
+console.log(false - true)
+    //as we see from above, when any other sign is used with a string number or a number, they are converted to number. when you add a number or a number string with a boolan value, true is treated as number 1,false as a zero. Also null is treated as a zero.
+console.log('kabute' - 'grace')
+    //from above, when you use other operators with a non-numeric string  the result is NaN (not a number)
+
+//undefined used with number, boolean or null gives a NaN when used with any operators.with a string, it remains a string.
+console.log(undefined + 4)
+
+//explicit conversion.
+//to convert a string or a boolean to a number, we can use the number global method or the parseInt/parsefloat method.
+//number global method.
+console.log(Number(true)) //NB the number must start with an uppercase letter.
+console.log(Number('3'))
+
+const isEven = true
+console.log(Number(isEven))
+    //parseInt/parseFloat
+console.log(parseInt('5')) //converts a string to an integrer
+console.log(parseFloat('3.223'))
+
+//string global method.this converts other datatypes into strings
+console.log(String(true)) //this gives a result of true- string
+    //an alternative to teh string global is the tostring method. this will however not work null and undefined. 
+console.log((true).toString())
+console.log(Number('5') + 3)
+    //global boolean method.it conversts
+console.log(Boolean(1))
+console.log(Boolean(0))
+    // null, undefineed, 0, ''(empty string) all return a false when converted to a boolean. everything else returns true.
+====*/

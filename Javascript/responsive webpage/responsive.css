@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+body {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h2,
+h3 {
+    line-height: 1;
+    font-weight: 100;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    gap: 1em;
+}
+
+nav,
+li {
+    list-style: none;
+}
+
+.navigation {
+    display: flex;
+    padding: 1.5em 0;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+
+.hero {
+    position: relative;
+    background: url(../images/meeting.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position-y: 80%;
+    text-align: center;
+}
+
+.hero-2 {
+    padding: 50% 0;
+    font-size: 20px;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.cuts {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: 'one' 'two' 'three' 'four' 'five';
+}
+
+@media(min-width: 40rem) {}
